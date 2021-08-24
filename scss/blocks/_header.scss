@@ -1,0 +1,178 @@
+.header{
+    background-color: #014E56;
+   .bar{
+       display: none;
+       position: absolute;
+       top: 55px;
+       right: 24px;
+       
+   }
+    #check{
+           display: none;
+       }
+    &__wrapper{
+        padding-top: 77px;
+        padding-bottom: 10px;
+       
+        .nav{
+            &__list{display: flex;
+                align-items: center;
+                
+                .exit__btn{
+                    display: none;
+                    position: absolute;
+                    top:56px;
+                    right: 25px;
+                }
+                
+                .sub__nav{
+                    margin-left: 80px;
+                    display: flex;
+                    &__item{
+                        margin-right: 40px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+                
+            }
+            
+            &__item{
+                &:nth-child(3){
+                    margin-left: 80px;
+                margin-right: auto;
+                }
+                .btn{
+                    @include btns;
+                }
+            }
+            &__link{
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: #FFFFFF;   
+            }
+        }   
+    }  
+}
+.logo__phone{
+    display: none;
+}
+@media only screen and (max-width:768px){
+    .header{
+        background-color: #014E56;
+        &__wrapper{
+            padding-top: 72px;
+            padding-bottom: 10px;
+            .nav{
+                &__list{
+                    display: flex;
+                    align-items: center;
+                    .sub__nav{
+                        display: flex;
+                        &__item{
+                            margin-right: 40px;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    
+                }
+                
+                &__item{
+                    &:nth-child(2){
+                    margin-left: 48px;
+                    margin-right: auto;
+                    }
+                    .btn{
+                        @include btns;
+                    }
+                }
+                &__link{
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #FFFFFF;   
+                }
+            }   
+        }  
+    }
+}
+@media only screen and (max-width:376px){
+    .header{
+        .bar{
+            display: block;
+        }
+        &__wrapper{
+            padding-top: 48px;
+            padding-bottom: 10px;
+            .nav{
+               
+                &__list{
+                    .exit__btn{
+                        display: block;
+                    }
+                    position: absolute;
+                    background-color:  #2C6269;
+                    top: 0;
+                    padding-top: 112px;
+                    right: 0;
+                    width: 250px;
+                    height: 100vh;
+                    transform: translateX(100%);
+                    transition: .3s;
+                    flex-direction: column;
+                    
+                    .sub__nav{
+                        display: flex;
+                        flex-direction: column;
+                        &__item{
+                            margin-right: 0;
+                            margin-bottom: 24px;
+
+                            &:last-child{
+                                margin-bottom: 36px;
+                            }
+                        }
+                    }
+                    
+                }
+                
+                &__item{
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                    margin-left: 0;
+                    margin-right: auto;
+                    }
+                    .btn{
+
+                        @include btns;
+                    }
+                }
+                &__link{
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #FFFFFF;   
+                }
+            }   
+        }  
+    }
+    .logo__phone{
+        display: block;
+        width: 127px;
+        &__img{
+            width: 127px;
+        }
+    }
+}
+#check:checked ~ .nav__list{
+    transform: translateX(0);
+}

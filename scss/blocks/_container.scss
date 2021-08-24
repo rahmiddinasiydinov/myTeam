@@ -1,0 +1,23 @@
+.container{
+    box-sizing: border-box;
+    padding: 0 10px;
+    width:1130px;
+    max-width: 100%;
+    margin: auto;
+}
+@media only screen and (max-width:768px){
+    .container{
+        box-sizing: border-box;
+        padding: 0 10px;
+        width:708px;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width:376px){
+    .container{
+        box-sizing: border-box;
+        padding: 0 10px;
+        width:347px;
+        max-width: 100%;
+    }
+}
