@@ -1,0 +1,111 @@
+.team{
+    padding:140px 0;
+    background-color: #012F34;
+    background-image: url(../images/team.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__header{
+        max-width: 445px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    &__line{
+        width: 50px;
+        height: 4px;
+        background-color: #F67E7E;
+        border: none;
+        margin-bottom: 54px;
+    }
+    &__item{
+        display: flex;
+        margin-bottom: 32px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__content{
+        margin-left: 23px;
+    }
+    &__text{
+        max-width: 445px;
+        margin-top: 16px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    &__sub-header{
+        font-size: 18px;
+        line-height: 28px;
+        color: #F67E7E;
+    }
+}
+@media screen and (max-width:868px) {
+    .team{
+        padding:100px 0;       
+        background-image: url(../images/team.svg);
+        background-position: right top;
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        &__header{
+            max-width: 445px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__list{
+            margin-top: 64px;
+        }
+        &__item{
+            display: flex;
+            margin-bottom: 32px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        &__text{
+            max-width: 478px;
+        }
+    }   
+}
+@media screen and (max-width:476px) {
+    .team{
+        padding:64px 0;       
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        &__header{
+            max-width: 240px;
+            font-size: 32px;
+            line-height: 32px;
+        }
+        &__list{
+            margin-top: 56px;
+        }
+        &__content{
+            margin-top: 16px;
+            margin-left: 0;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 48px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        &__text{
+            max-width: 327px;
+        }
+    }   
+}

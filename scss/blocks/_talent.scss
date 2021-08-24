@@ -1,0 +1,89 @@
+.talant{
+    position: relative;
+    padding:133px 0 0;
+    background-color: #014E56;
+    background-image: url(../images/telent__img.svg);
+    background-repeat: no-repeat;
+    background-position: left 140px;
+    
+    &__wrapper{
+        display: flex;
+        padding-bottom: 250px;
+        justify-content: space-between;
+        background-image:  url(../images/talent__img1.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    &__header{
+        max-width: 620px; 
+        font-size: 100px;
+        line-height: 100px;
+    }
+    &__text{
+        max-width: 445px;
+
+        font-size: 18px;
+        line-height: 28px;
+        
+    }
+    &__bold{
+        color: #F67E7E;;
+    }
+    &__line{
+        width: 50px;
+        height: 4px;
+        background-color:  #79C8C7;
+        border: none;
+        margin-bottom: 79px;
+    }
+}
+@media screen and (max-width:868px) {
+    .talant{
+        padding:120px 0 0;
+        background-image: none;
+        
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 256px;
+            justify-content: flex-start;
+            background-image:  url(../images/talent__img1.svg);
+            background-position: bottom center;
+        }
+        &__header{
+             text-align: center;
+            font-size: 64px;
+            line-height: 56px;
+        }
+        &__text{
+            margin-top: 24px;
+            text-align: center;
+            max-width: 457px;
+            font-size: 15px;
+            line-height: 28px;
+            
+        }
+        &__line{
+            display: none;
+            margin-top: 24px;
+        }
+    }   
+}
+@media screen and (max-width:476px) {
+    .talant{
+        padding-top: 80px;
+        &__wrapper{
+            padding-bottom: 197px;
+        }
+        &__header{
+            font-size: 40px;
+            line-height: 40px;
+        }
+        &__text{
+            margin-top: 18px;
+            max-width: 327px;
+        }
+    }   
+
+}

@@ -60,7 +60,7 @@
 .logo__phone{
     display: none;
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:868px){
     .header{
         background-color: #014E56;
         &__wrapper{
@@ -72,6 +72,7 @@
                     align-items: center;
                     .sub__nav{
                         display: flex;
+                        margin-left: 48px;
                         &__item{
                             margin-right: 40px;
                             &:last-child{
@@ -83,12 +84,9 @@
                 }
                 
                 &__item{
-                    &:nth-child(2){
+                    &:nth-child(3){
                     margin-left: 48px;
                     margin-right: auto;
-                    }
-                    .btn{
-                        @include btns;
                     }
                 }
                 &__link{
@@ -102,7 +100,11 @@
         }  
     }
 }
-@media only screen and (max-width:376px){
+
+
+    
+
+@media only screen and (max-width:476px){
     .header{
         .bar{
             display: block;
@@ -117,6 +119,7 @@
                         display: block;
                     }
                     position: absolute;
+                    z-index: 2;
                     background-color:  #2C6269;
                     top: 0;
                     padding-top: 112px;
