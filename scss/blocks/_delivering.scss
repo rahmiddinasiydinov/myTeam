@@ -1,0 +1,105 @@
+.delivering{
+    text-align: center;
+    padding:140px 0 150px;
+    background-color: #004047;
+    background-image: url(../images/delivery__recs.svg), url(../images/delivery__corner.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    &__header{
+        max-width: 932px;
+        margin: 0 auto;
+        font-size: 48px;
+        line-height: 48px;
+        .success{
+            color:#79C8C7;;
+        }
+        
+    }
+    &__list{
+        margin-top: 92px;
+        display: flex;
+    }
+    &__item{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &::before{
+            content: "";
+            width: 67px;
+            height: 56px;
+            display: block;
+            position: relative;
+            z-index: -1;
+            background-image: url(../../images/nail.svg);
+            top:20px
+        }
+    }
+    &__img{
+        width: 62px;
+    }
+    &__text{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    &__title{
+        margin: 24px 0 2px;
+        color: #79C8C7;
+    }
+    &__job{
+        font-style: italic;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 32px;        
+    }
+}
+@media screen and (max-width:868px ) {
+    .delivering{
+        padding:100px 0;
+        &__header{
+            max-width: 573px;
+            font-size: 32px;
+            line-height: 32px;
+            
+        }
+        &__list{
+            margin-top: 84px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item{
+            max-width: 573px;
+            margin-right:0;
+            margin-bottom: 84px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        &__title{
+            margin: 16px 0 2px;
+        }
+        &__job{
+            margin-bottom: 16px;        
+        }
+    }  
+    
+}
+@media screen and (max-width:476px ) {
+    .delivering{
+        padding:164px 0;
+        &__header{
+            max-width: 327px;
+        }
+        &__item{
+            max-width: 327px;
+        }
+    }  
+    
+}
