@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-style: normal;
+  overflow: hidden;
 }
 
 body {
@@ -186,7 +187,7 @@ a {
     padding-bottom: 10px;
   }
   .header__wrapper .nav__list {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     background-color: #2C6269;
     top: 0;
